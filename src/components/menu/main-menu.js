@@ -12,10 +12,10 @@ const selectedStyle = {
 export const MainMenu = () =>
     <nav className="main-menu">
         <NavLink to="/"><FaHome/></NavLink>
-        <NavLink to="/about" activeStyle={selectedStyle}>[About]</NavLink>
-        <NavLink to="/events" activeStyle={selectedStyle}>[Events]</NavLink>
-        <NavLink to="/products" activeStyle={selectedStyle}>[Products]</NavLink>
-        <NavLink to="/contact" activeStyle={selectedStyle}>[Contact Us]</NavLink>
+        <NavLink to="/about" activeStyle={selectedStyle}>[About!]</NavLink>
+        <NavLink to="/events" activeStyle={selectedStyle}>[Events!]</NavLink>
+        <NavLink to="/products" activeStyle={selectedStyle}>[Products!]</NavLink>
+        <NavLink to="/contact" activeStyle={selectedStyle}>[Contact Us!]</NavLink>
     </nav>
 
 export const AboutMenu = ({match}) =>
@@ -23,13 +23,13 @@ export const AboutMenu = ({match}) =>
         <li>
             <NavLink to="/about"
                      style={match.isExact && selectedStyle}>
-                [Company]
+                [Companyyyyy]
             </NavLink>
         </li>
         <li>
             <NavLink to="/about/history"
                      activeStyle={selectedStyle}>
-                [History]
+                [Historyyyy]
             </NavLink>
         </li>
         <li>

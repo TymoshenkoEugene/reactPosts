@@ -39,7 +39,7 @@ div.home {
     color: slategray;
   }
 
-  > nav {
+  >nav {
     background-color: slategray;
     padding: 1em;
     border-top: dashed .5em ghostwhite;
@@ -56,6 +56,25 @@ div.home {
     }
   }
 
+}
+
+div.header-nav {
+  >nav {
+    background-color: slategray;
+    padding: 1em;
+    border-top: dashed .5em ghostwhite;
+    border-bottom: dashed .5em ghostwhite;
+    width: calc(100% - 2em);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    a {
+      font-size: 2em;
+      color: ghostwhite;
+      flex-basis: 200px;
+    }
+  }
 }
 
 section.about {

@@ -14,12 +14,7 @@ const PageTemplate = ({children}) =>
 export const Home = () =>
     <div className="home">
         <Header/>
-        <nav>
-            <Link to="about">[About]</Link>
-            <Link to="events">[Events]</Link>
-            <Link to="products">[Products]</Link>
-            <Link to="contact">[Contact Us]</Link>
-        </nav>
+        <h1>TEXT SHOULD BE HERE</h1>
         <Footer/>
     </div>
 
