@@ -1,3 +1,4 @@
+/*
 import {FaHome} from 'react-icons/fa';
 import {NavLink} from 'react-router-dom';
 import React from 'react';
@@ -44,4 +45,4 @@ export const AboutMenu = ({match}) =>
                 [Location]
             </NavLink>
         </li>
-    </div>
+    </div>*/

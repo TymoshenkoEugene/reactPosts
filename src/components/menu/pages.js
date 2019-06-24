@@ -2,13 +2,22 @@ import { Link, Route } from 'react-router-dom'
 import { MainMenu, AboutMenu } from './main-menu'
 import { Header } from '../headers/header'
 import { Footer } from '../footers/footer'
-import '../../stylesheets/pages.scss'
 import React from 'react'
+import {Product} from '../products/product'
+import '../../stylesheets/pages.scss'
 
-const PageTemplate = ({children}) =>
+
+/*const PageTemplate = ({children}) =>
     <div className="page">
         <MainMenu />
         {children}
+    </div>*/
+
+export const PageTemplate = ({children}) =>
+    <div className="home">
+        <Header/>
+        {children}
+        <Footer/>
     </div>
 
 export const Home = () =>
@@ -34,6 +43,7 @@ export const Products = () =>
     <PageTemplate>
         <section className="products">
             <h1>[Product Catalog]</h1>
+            <Product/>
         </section>
     </PageTemplate>
 
@@ -47,11 +57,11 @@ export const Contact = () =>
 export const About = ({ match }) =>
     <PageTemplate>
         <section className="about">
-            <Route component={AboutMenu} />
+            {/*<Route component={AboutMenu} />*/}
             <Route exact path="/about" component={Company}/>
-            <Route path="/about/history" component={History}/>
+            {/*<Route path="/about/history" component={History}/>
             <Route path="/about/services" component={Services}/>
-            <Route path="/about/location" component={Location}/>
+            <Route path="/about/location" component={Location}/>*/}
         </section>
     </PageTemplate>
 
@@ -120,7 +130,7 @@ export const Company = () =>
 
 export const History = () =>
     <section className="history">
-        <h2>Our History</h2>
+        <h2>Our History qyqyq</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
             Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
