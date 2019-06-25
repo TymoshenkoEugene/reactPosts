@@ -11,7 +11,7 @@ class App extends Component {
                 <Switch>
                     <Redirect exact from="/" to="about"/>
                     <Route path="/about" component={About}/>
-                    <Route path="/events" component={Events}/>
+                    {/*<Route path="/events" component={Events}/>*/}
                     <Route path="/products" component={Products}/>
                     <Route path="/contact" component={Contact}/>
                     {/*<Route component={Whoops404}/>*/}

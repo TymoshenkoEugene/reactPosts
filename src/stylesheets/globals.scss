@@ -1,7 +1,8 @@
 $main-font: sans-serif;
 
-html, body, #react-container, #react-container>div {
+html, body, #react-container, #react-container>div, .home, .nav-context {
   height: 100%;
+  min-height: 100vh;
 }
 
 body {
