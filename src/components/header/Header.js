@@ -1,7 +1,7 @@
 import React from "react";
-import {HeaderNav} from "./nav";
+import {HeaderNav} from "./header-nav/HeaderNav";
 
-import '../../stylesheets/header.scss'
+import './Header.scss'
 
 export const Header = () =>
     <div className="header">

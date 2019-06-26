@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom'
 
-import {About, Contact, Events, PageTemplate, Products, Whoops404} from './components/menu/pages'
+import {About, Contact, Events, PageTemplate, Products, Whoops404} from './menu/pages'
 
 class App extends Component {
     render() {

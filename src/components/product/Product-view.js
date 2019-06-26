@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Product = () =>
+export const ProductView = () =>
     <div className="product">
         <a href='product/1'>
             <img src = 'testproduct/testProduct.jpg'/>

@@ -1,9 +1,9 @@
 import { Link, Route } from 'react-router-dom'
-import { Header } from '../headers/header'
-import { Footer } from '../footers/footer'
-import { Nav } from '../nav/Nav'
+import { Header } from '../header/Header'
+import { Footer } from '../footer/Footer'
+import { CategoriesNav } from '../nav/CategoriesNav'
 import React from 'react'
-import {ProductList} from '../products/ProductList'
+import {ProductList} from '../productlist/ProductList'
 import '../../stylesheets/pages.scss'
 import '../../stylesheets/NavContext.scss'
 
@@ -17,7 +17,7 @@ export const PageTemplate = ({children}) =>
 
 export const NavContext = ({children}) =>
     <div className="nav-context">
-        <Nav/>
+        <CategoriesNav/>
         {children}
     </div>
 
@@ -33,12 +33,7 @@ export const Products = () =>
         </section>
     </PageTemplate>
 
-export const Contact = () =>
-    <PageTemplate>
-        <section className="contact">
-            <h1>[Contact Us!!]</h1>
-        </section>
-    </PageTemplate>
+
 
 export const About = () =>
     <PageTemplate>
